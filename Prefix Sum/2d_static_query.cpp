@@ -40,17 +40,17 @@ void test(){
 		d[x2+1][y1] -= x;
 		d[x2+1][y2+1] += x;
 	}
-    for(int i = 1; i <= n; ++i){
-    	for(int j = 1; j <= m; ++j){
-    		d[i][j] = d[i-1][j] + d[i][j-1] + d[i][j] - d[i-1][j-1];
-    	}
-    }
-    for(int i = 1; i <= n; ++i){
-    	for(int j = 1; j <= m; ++j){
-    		cout << d[i][j] + a[i][j]<< ' ';
-    	}
-    	cout << endl;
-    }
+        for(int i = 1; i <= n; ++i){
+        	for(int j = 1; j <= m; ++j){
+    		      d[i][j] = d[i-1][j] + d[i][j-1] + d[i][j] - d[i-1][j-1];
+    	        }
+        }
+        for(int i = 1; i <= n; ++i){
+        	for(int j = 1; j <= m; ++j){
+    		    cout << d[i][j] + a[i][j]<< ' ';
+    	        }
+    	        cout << endl;
+        }
 
 }
 
